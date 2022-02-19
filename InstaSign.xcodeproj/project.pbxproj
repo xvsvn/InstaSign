@@ -14,6 +14,13 @@
 		227D50B827BBE5080017F2B8 /* InstaSign.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 227D50B627BBE5080017F2B8 /* InstaSign.xcdatamodeld */; };
 		227D50BA27BBE50B0017F2B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227D50B927BBE50B0017F2B8 /* Assets.xcassets */; };
 		227D50BD27BBE50B0017F2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227D50BB27BBE50B0017F2B8 /* LaunchScreen.storyboard */; };
+		227D50C727BBE59B0017F2B8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D50C527BBE59B0017F2B8 /* SignInViewController.swift */; };
+		227D50C827BBE59B0017F2B8 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227D50C627BBE59B0017F2B8 /* SignInViewController.xib */; };
+		227D50CB27BBE5AE0017F2B8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D50C927BBE5AE0017F2B8 /* SignUpViewController.swift */; };
+		227D50CC27BBE5AE0017F2B8 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227D50CA27BBE5AE0017F2B8 /* SignUpViewController.xib */; };
+		227D50CE27BBE5C40017F2B8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D50CD27BBE5C40017F2B8 /* BaseViewController.swift */; };
+		227D50D127C0BFC70017F2B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D50CF27C0BFC70017F2B8 /* HomeViewController.swift */; };
+		227D50D227C0BFC70017F2B8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227D50D027C0BFC70017F2B8 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		227D50B927BBE50B0017F2B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		227D50BC27BBE50B0017F2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		227D50BE27BBE50B0017F2B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		227D50C527BBE59B0017F2B8 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		227D50C627BBE59B0017F2B8 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		227D50C927BBE5AE0017F2B8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		227D50CA27BBE5AE0017F2B8 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		227D50CD27BBE5C40017F2B8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		227D50CF27C0BFC70017F2B8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		227D50D027C0BFC70017F2B8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 		227D50AC27BBE5080017F2B8 /* InstaSign */ = {
 			isa = PBXGroup;
 			children = (
+				227D50C427BBE5180017F2B8 /* Controllers */,
 				227D50AD27BBE5080017F2B8 /* AppDelegate.swift */,
 				227D50AF27BBE5080017F2B8 /* SceneDelegate.swift */,
 				227D50B127BBE5080017F2B8 /* ViewController.swift */,
@@ -68,6 +83,20 @@
 				227D50B627BBE5080017F2B8 /* InstaSign.xcdatamodeld */,
 			);
 			path = InstaSign;
+			sourceTree = "<group>";
+		};
+		227D50C427BBE5180017F2B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				227D50CD27BBE5C40017F2B8 /* BaseViewController.swift */,
+				227D50C527BBE59B0017F2B8 /* SignInViewController.swift */,
+				227D50C627BBE59B0017F2B8 /* SignInViewController.xib */,
+				227D50C927BBE5AE0017F2B8 /* SignUpViewController.swift */,
+				227D50CA27BBE5AE0017F2B8 /* SignUpViewController.xib */,
+				227D50CF27C0BFC70017F2B8 /* HomeViewController.swift */,
+				227D50D027C0BFC70017F2B8 /* HomeViewController.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +157,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227D50CC27BBE5AE0017F2B8 /* SignUpViewController.xib in Resources */,
+				227D50C827BBE59B0017F2B8 /* SignInViewController.xib in Resources */,
 				227D50BD27BBE50B0017F2B8 /* LaunchScreen.storyboard in Resources */,
 				227D50BA27BBE50B0017F2B8 /* Assets.xcassets in Resources */,
 				227D50B527BBE5080017F2B8 /* Main.storyboard in Resources */,
+				227D50D227C0BFC70017F2B8 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227D50CB27BBE5AE0017F2B8 /* SignUpViewController.swift in Sources */,
 				227D50B227BBE5080017F2B8 /* ViewController.swift in Sources */,
 				227D50AE27BBE5080017F2B8 /* AppDelegate.swift in Sources */,
+				227D50D127C0BFC70017F2B8 /* HomeViewController.swift in Sources */,
 				227D50B827BBE5080017F2B8 /* InstaSign.xcdatamodeld in Sources */,
+				227D50C727BBE59B0017F2B8 /* SignInViewController.swift in Sources */,
+				227D50CE27BBE5C40017F2B8 /* BaseViewController.swift in Sources */,
 				227D50B027BBE5080017F2B8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
