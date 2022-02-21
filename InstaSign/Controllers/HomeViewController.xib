@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="InstaSign" customModuleProvider="target">
             <connections>
+                <outlet property="TableView" destination="Zmz-aR-KpJ" id="gEE-Bi-EOE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,16 +19,19 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFF-bL-aqz">
-                    <rect key="frame" x="163" y="402" width="88" height="92"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zmz-aR-KpJ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Zmz-aR-KpJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0HT-mf-lBC"/>
+                <constraint firstItem="Zmz-aR-KpJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4df-2i-icg"/>
+                <constraint firstItem="Zmz-aR-KpJ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Nev-uJ-fzD"/>
+                <constraint firstAttribute="trailing" secondItem="Zmz-aR-KpJ" secondAttribute="trailing" id="Nkb-Hr-GTb"/>
+            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
         </view>
     </objects>

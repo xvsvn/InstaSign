@@ -5,21 +5,39 @@
 //  Created by Xasan Xasanov on 15/02/22.
 //
 
+
 import UIKit
 import CoreData
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setCommonNavBar()
+        
         return true
     }
+        
+    func setCommonNavBar() {
+             let appearance = UINavigationBarAppearance()
+     
+             appearance.configureWithOpaqueBackground()
+             UINavigationBar.appearance().standardAppearance = appearance
+             UINavigationBar.appearance().scrollEdgeAppearance = appearance
+             appearance.backgroundColor = .white
+    
+            UINavigationBar.appearance().barTintColor = UIColor.red
+            UINavigationBar.appearance().tintColor = UIColor.black
+             UINavigationBar.appearance().isHidden = true
+             appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        
+        
+     }
 
     // MARK: UISceneSession Lifecycle
-
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
@@ -33,7 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: - Core Data stack
-
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -41,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "InstaSign")
+        let container = NSPersistentContainer(name: "InstaPDP")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -62,7 +79,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     // MARK: - Core Data Saving support
-
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
@@ -78,4 +94,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-
